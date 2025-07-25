@@ -34,13 +34,12 @@ Official mobile application for TechEvent 2025 Innovation Summit.
 git clone https://github.com/yourusername/techevent-2025.git
 cd techevent-2025
 ```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+2. Start the development server:
 ```bash
 npm run dev
 ```
@@ -48,7 +47,7 @@ npm run dev
 4. Open the app:
    - Scan the QR code with Expo Go app on your mobile device
    - Press `i` for iOS simulator
-   - Press `a` for Android emulator
+3. Use Expo Go app to scan the QR code and test on your mobile device
 
 ## Project Structure
 
