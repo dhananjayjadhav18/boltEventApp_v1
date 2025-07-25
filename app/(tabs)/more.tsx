@@ -80,16 +80,15 @@ export default function MoreScreen() {
   const router = useRouter();
 
   const handleMenuPress = (route: string) => {
-    // For now, we'll just log the route since not all screens are implemented
-    console.log('Navigate to:', route);
-    
-    // Navigate to implemented screens
     if (route === '/faq') {
       router.push('/faq' as any);
     } else if (route === '/contact') {
       router.push('/contact' as any);
     } else if (route === '/about') {
       router.push('/about' as any);
+    } else {
+      // For unimplemented routes, show a placeholder
+      console.log('Navigate to:', route);
     }
   };
 

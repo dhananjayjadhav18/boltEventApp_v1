@@ -20,7 +20,7 @@ import {
 } from 'lucide-react-native';
 
 const { width } = Dimensions.get('window');
-const cardWidth = (width - 72) / 2; // Adjusted for proper two-column layout with gap
+const cardWidth = (width - 64) / 2; // Account for padding and gap
 
 const quickActions = [
   { id: 1, title: 'Event Info', icon: Calendar, route: '/about' },
@@ -60,21 +60,20 @@ export default function HomeScreen() {
     if (route === '/about') {
       router.push('/about');
     } else if (route === '/speakers') {
-      router.push('/speakers');
+      router.push('/(tabs)/speakers');
     } else if (route === '/agenda') {
-      router.push('/agenda');
+      router.push('/(tabs)/agenda');
     } else {
       console.log('Navigate to:', route);
     }
   };
 
   const handleSessionPress = (sessionId: number) => {
-    // Navigate to agenda page and potentially scroll to specific session
-    router.push('/agenda');
+    router.push('/(tabs)/agenda');
   };
 
   const handleViewAllSessions = () => {
-    router.push('/agenda');
+    router.push('/(tabs)/agenda');
   };
 
   return (

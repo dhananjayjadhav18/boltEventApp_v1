@@ -11,10 +11,9 @@ export default function RootLayout() {
   useFrameworkReady();
 
   useEffect(() => {
-    // Hide splash screen after component mounts
     const timer = setTimeout(() => {
       SplashScreen.hideAsync();
-    }, 100);
+    }, 50);
 
     return () => clearTimeout(timer);
   }, []);

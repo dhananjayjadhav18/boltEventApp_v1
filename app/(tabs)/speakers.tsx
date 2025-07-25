@@ -20,7 +20,7 @@ import {
 } from 'lucide-react-native';
 
 const { width } = Dimensions.get('window');
-const cardWidth = (width - 72) / 2;
+const cardWidth = (width - 64) / 2;
 
 const speakersData = [
   {
